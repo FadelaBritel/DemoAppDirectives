@@ -3,6 +3,10 @@
 eventsApp.directive('eventThumbnail', function(){
     return {
         restrict: 'E',
-        templateUrl: 'templates/directives/eventThumbnail.html'
+        replace:true,
+        templateUrl: 'templates/directives/eventThumbnail.html',
+        scope:{
+            event:"="
+        }
     };
 });
